@@ -19,6 +19,15 @@ jobs:
         with:
           submodules: true
           lfs: false
+
+
+      - name: Add executable permissions to vite
+        run: chmod +x node_modules/.bin/vite
+
+      # Run Vite
+      - name: Run Vite
+        run: npx vite
+        
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
