@@ -28,8 +28,8 @@ jobs:
         run: chmod +x node_modules/.bin/vite
 
       # Use npx vite to run the command
-      - name: Run Vite
-        run: npx vite
+      # - name: Run Vite
+      #   run: npx vite
         
       - name: Build And Deploy
         id: builddeploy
