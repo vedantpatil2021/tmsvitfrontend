@@ -20,13 +20,9 @@ jobs:
           submodules: true
           lfs: false
 
-
-      - name: Add executable permissions to vite
-        run: chmod +x node_modules/.bin/vite
-
       # Run Vite
       - name: Run Vite
-        run: npx vite
+        run: npm install --force
         
       - name: Build And Deploy
         id: builddeploy
